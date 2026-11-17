@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Project Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Personal Project Tracker</h1>
+        <p>Organize and track your personal projects.</p>
+
+        <form id="projectForm">
+            <input
+                type="text"
+                id="projectName"
+                placeholder="Project name"
+                required
+            >
+
+            <input
+                type="text"
+                id="projectDescription"
+                placeholder="Project description"
+                required
+            >
+
+            <select id="projectCategory">
+                <option value="School">School</option>
+                <option value="Technology">Technology</option>
+                <option value="Writing">Writing</option>
+                <option value="Game Design">Game Design</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="projectStatus">
+                <option value="Idea">Idea</option>
+                <option value="Active">Active</option>
+                <option value="Paused">Paused</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <button type="submit">Add Project</button>
+        </form>
+
+        <h2>My Projects</h2>
+
+        <div id="projectList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
