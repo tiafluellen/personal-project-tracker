@@ -6,16 +6,20 @@ Personal Project Tracker is a web application designed to help users organize an
 
 The application is designed for students, developers, writers, game designers, and other users who work on multiple personal projects.
 
-## Planned Features
+## MVP Features
 
-- Create and edit projects
+The Minimum Viable Product will focus on the core functionality needed to manage personal projects.
+
+- Create projects
+- View projects
+- Edit project information
 - Organize projects by category
 - Track project status
 - Track project progress
-- View project information
-- AI-powered project suggestions and summaries
 
-## Planned Technology Stack
+Additional features, including AI-powered project suggestions and summaries, may be added in future development.
+
+## Technology Stack
 
 ### Frontend
 - HTML
@@ -36,11 +40,26 @@ The application is designed for students, developers, writers, game designers, a
 - GitHub Actions
 
 ### Deployment
-- Render
+- Google Cloud
 
-### AI Integration
-AI will be used to help users generate project ideas, descriptions, summaries, and suggestions based on their projects.
+## AI Tools Used
+
+AI tools such as ChatGPT and GitHub Copilot are being used during development to assist with coding, debugging, troubleshooting, brainstorming, and documentation.
+
+AI-generated suggestions are reviewed, tested, and modified as needed before being used in the project.
+
+## Docker
+
+The application will be containerized using Docker. Docker will be used to create a consistent environment for running the application during development and deployment.
+
+## CI/CD
+
+GitHub Actions will be used to automate development tasks such as testing, building, and deployment.
 
 ## Project Status
 
-Currently in planning and development.
+Currently in MVP development. The core features are being implemented and tested as part of the Unit 12 project.
+
+## Setup Instructions
+
+Setup instructions will be updated as the application is developed and the final project structure is established.
