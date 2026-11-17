@@ -2,45 +2,43 @@
 
 ## Project Description
 
-Personal Project Tracker is a web application designed to help users organize and manage personal projects in one place. Users can create projects, organize them by category and status, and keep track of their progress.
+Personal Project Tracker is a web application designed to help users organize and manage personal projects in one place. Users can create projects, organize them by category and status, and manage project information.
 
 The application is designed for students, developers, writers, game designers, and other users who work on multiple personal projects.
 
 ## MVP Features
 
-The Minimum Viable Product will focus on the core functionality needed to manage personal projects.
+The current MVP includes the core functionality needed to manage personal projects.
 
 - Create projects
 - View projects
 - Edit project information
+- Delete projects
 - Organize projects by category
 - Track project status
-- Track project progress
 
-Additional features, including AI-powered project suggestions and summaries, may be added in future development.
+Future development may include project progress tracking, saved project data, AI-powered project suggestions, and project summaries.
 
 ## Technology Stack
 
 ### Frontend
+
 - HTML
 - CSS
 - JavaScript
 
-### Backend
-- Node.js
-- Express.js
-
-### Database
-- SQLite
-
 ### Development Tools
+
 - Git
 - GitHub
 - Docker
 - GitHub Actions
+- Visual Studio Code
 
-### Deployment
-- Google Cloud
+### Containerization
+
+- Docker
+- Nginx
 
 ## AI Tools Used
 
@@ -50,16 +48,27 @@ AI-generated suggestions are reviewed, tested, and modified as needed before bei
 
 ## Docker
 
-The application will be containerized using Docker. Docker will be used to create a consistent environment for running the application during development and deployment.
+The project is containerized using Docker.
+
+The Docker configuration uses an Nginx Alpine image to serve the frontend application. The Docker image can be built locally and run as a container for testing.
+
+Example Docker commands:
+
+```bash
+docker build -t personal-project-tracker .
+docker run -d -p 8080:80 --name personal-project-tracker-container personal-project-tracker
+```
+
+The application can then be viewed at:
+
+`http://localhost:8080`
 
 ## CI/CD
 
-GitHub Actions will be used to automate development tasks such as testing, building, and deployment.
+GitHub Actions is used to automate project validation.
 
-## Project Status
+The CI workflow checks that required project files are present and validates the HTML and JavaScript files. The workflow runs when changes are pushed to the repository and when pull requests are created for the `main` branch.
 
-Currently in MVP development. The core features are being implemented and tested as part of the Unit 12 project.
+## Git and GitHub Workflow
 
-## Setup Instructions
-
-Setup instructions will be updated as the application is developed and the final project structure is established.
+The project uses feature branches and
